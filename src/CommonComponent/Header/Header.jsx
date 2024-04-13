@@ -96,21 +96,21 @@ const Header = () => {
               </div>
               <div className="hidden md:block">
                 <ul className="flex items-center gap-x-8">
-                  <li className="flex items-center gap-x-1">
+                  <li className="group flex items-center gap-x-1 cursor-pointer">
                     <a
                       href="#"
                       data-link-alt="Home"
-                      className="text-[#FB2E86] font-Lato font-normal text-base leading-none"
+                      className="group font-Lato font-normal text-base leading-none focus:text-[#FB2E86] group-hover:text-[#FB2E86]"
                     >
                       <span>Home</span>
                     </a>
-                    <IoIosArrowDown className="text-[#FB2E86]" />
+                    <IoIosArrowDown className="group-hover:text-[#FB2E86]" />
                   </li>
                   <li>
                     <a
                       href="#"
                       data-link-alt="Pages"
-                      className="text-[#000] font-Lato font-normal text-base leading-none"
+                      className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
                     >
                       <span>Pages</span>
                     </a>
@@ -119,7 +119,7 @@ const Header = () => {
                     <a
                       href="#"
                       data-link-alt="Products"
-                      className="text-[#000] font-Lato font-normal text-base leading-none"
+                      className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
                     >
                       <span>Products</span>
                     </a>
@@ -128,7 +128,7 @@ const Header = () => {
                     <a
                       href="#"
                       data-link-alt="Blog"
-                      className="text-[#000] font-Lato font-normal text-base leading-none"
+                      className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
                     >
                       <span>Blog</span>
                     </a>
@@ -137,7 +137,7 @@ const Header = () => {
                     <a
                       href="#"
                       data-link-alt="Shop"
-                      className="text-[#000] font-Lato font-normal text-base leading-none"
+                      className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
                     >
                       <span>Shop</span>
                     </a>
@@ -146,7 +146,7 @@ const Header = () => {
                     <a
                       href="#"
                       data-link-alt="Contact"
-                      className="text-[#000] font-Lato font-normal text-base leading-none"
+                      className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
                     >
                       <span>Contact</span>
                     </a>
