@@ -18,7 +18,7 @@ const DiscountProductCard1 = ({ title, tag, img, tagTitle }) => {
             </a>
           ) : null}
         </div>
-        <div className="flex items-end justify-end">
+        <div className="flex justify-end">
           <img src={img ? img : discountImg} alt={img} />
         </div>
       </div>
