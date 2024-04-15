@@ -6,6 +6,7 @@ import LatestProduct from "../HomeComponent/LatestProduct/LatestProduct";
 import Offer from "../HomeComponent/Offer/Offer";
 import Feature from "../HomeComponent/Feature/Feature";
 import TrendingProduct from "../HomeComponent/TrendingProduct/TrendingProduct";
+import DiscountItem from "../HomeComponent/DiscountItem/DiscountItem";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Offer />
       <Feature />
       <TrendingProduct />
+      <DiscountItem />
     </>
   );
 };
