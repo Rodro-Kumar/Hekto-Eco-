@@ -5,7 +5,7 @@ const Feature = () => {
     <>
       <div className="bg-[#F1F0FF] mb-32 py-4 px-4 lg:px-0 ">
         <div className="container">
-          <div className="flex justify-center items-center flex-col">
+          <div className="flex justify-center items-center flex-col sm:flex-row">
             <div>
               <img src={featureImg} alt={featureImg} />
             </div>
