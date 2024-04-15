@@ -5,7 +5,7 @@ import lamp from "../../assets/lamp.png";
 const Hero = () => {
   return (
     <>
-      <div className="bg-[#f2f0ff] overflow-hidden">
+      <div id="hero" className="bg-[#f2f0ff] overflow-hidden">
         <div className="container">
           <div className="py-10 flex items-center relative flex-col md:flex-row px-4 lg:px-0">
             <div className="absolute left-[-200px] top-0">
