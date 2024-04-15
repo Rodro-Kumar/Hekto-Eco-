@@ -1,10 +1,12 @@
 import React from "react";
 import discountImg from "../../assets/discount1.png";
 
-const DiscountProductCard1 = ({ title, tag, img, tagTitle }) => {
+const DiscountProductCard1 = ({ className, title, tag, img, tagTitle }) => {
   return (
     <>
-      <div className="pt-9 pl-6 bg-[#FFF6FB] w-[420px] h-[270px]">
+      <div
+        className={`pt-9 pl-6 bg-[#FFF6FB] w-[326px] sm:w-[420px] h-[270px] text-center ${className}`}
+      >
         <div>
           <h4 className="text-[#151875] font-JosfinSans font-semibold text-[26px] pb-3">
             {title ? title : "23% off in all products"}
@@ -18,7 +20,7 @@ const DiscountProductCard1 = ({ title, tag, img, tagTitle }) => {
             </a>
           ) : null}
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end absolute right-10 sm:right-0 top-[70px]">
           <img src={img ? img : discountImg} alt={img} />
         </div>
       </div>
