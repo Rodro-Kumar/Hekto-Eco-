@@ -3,7 +3,7 @@ import featureImg from "../../assets/feature.png";
 const Feature = () => {
   return (
     <>
-      <div className="bg-[#F1F0FF] mb-32 py-4 px-4 lg:px-0 ">
+      <div id="feature" className="bg-[#F1F0FF] mb-32 py-4 px-4 lg:px-0 ">
         <div className="container">
           <div className="flex justify-center items-center flex-col sm:flex-row">
             <div>
