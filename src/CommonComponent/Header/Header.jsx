@@ -9,6 +9,7 @@ import Logo from "../../assets/Hekto.png";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [menuOpen, setmenuOpen] = useState(false);
@@ -21,9 +22,9 @@ const Header = () => {
       {/* ============== Top ============ */}
       <div className="bg-[#7E33E0] py-[14px] text-[#F1F1F1]">
         <div className="container">
-          <div className="flex items-center justify-between px-4 lg:px-0">
+          <div className="flex items-center justify-between px-4 xl:px-0">
             <div className="hidden md:block">
-              <div className="flex items-center gap-x-12">
+              <div className="flex items-center gap-x-12 md:gap-x-6 lg:gap-x-12">
                 <div className="flex items-center gap-x-3">
                   <span>
                     <MdOutlineMailOutline className="text-lg" />
@@ -48,7 +49,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-between w-full md:justify-end md:gap-x-7">
+            <div className="flex items-center justify-between w-full md:justify-end md:gap-x-4 lg:gap-x-7">
               <div className="text-sm sm:text-base font-JosfinSans font-semibold flex items-center gap-x-1 cursor-pointer max-[340px]:gap-x-0 max-[310px]:text-xs">
                 <p>English</p>
                 <span>
@@ -83,19 +84,19 @@ const Header = () => {
         </div>
       </div>
       {/* ============= Bottom =========== */}
-      <div className="py-4 header px-4 lg:px-0">
+      <div className="py-4 header px-4 xl:px-0">
         <div className="container">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-x-[88px]">
+            <div className="flex items-center gap-x-[88px] md:gap-x-[25px] lg:gap-x-[88px]">
               <div>
                 <a href="#">
                   <picture>
-                    <img src={Logo} alt={Logo} />
+                    <img src={Logo} alt={Logo} className="md:w-[60px]" />
                   </picture>
                 </a>
               </div>
               <div className="hidden md:block">
-                <ul className="flex items-center gap-x-8">
+                <ul className="flex items-center gap-x-8 md:gap-x-4 lg:gap-x-8">
                   <li className="group flex items-center gap-x-1 cursor-pointer">
                     <a
                       href="#"
@@ -156,12 +157,16 @@ const Header = () => {
             </div>
             {/* =================== */}
             {menuOpen && (
-              <div
-                className={`flex flex-col absolute items-center bg-[#7E33E0] z-[999] w-full left-1/2 -translate-x-1/2 py-5 ${
-                  menuOpen
-                    ? "top-[48px] transition-all duration-[1s]"
-                    : "top-[-275px] transition-all duration-[1s] "
-                }`}
+              <motion.div
+                initial={{ top: "-100vh" }}
+                animate={{ top: "40px" }}
+                transition={{
+                  ease: [0.61, 1, 0.88, 1],
+                  duration: 0.5,
+                }}
+                className={
+                  "flex flex-col absolute items-center bg-[#7E33E0] top-10 z-[999] w-full left-1/2 -translate-x-1/2 py-5"
+                }
               >
                 <div>
                   <div
@@ -238,16 +243,16 @@ const Header = () => {
                     <CiSearch />
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )}
 
-            {/* ================= */}
+            {/* ================ */}
 
-            <div className="hidden md:block">
+            <div className="hidden md:block md:ml-3 lg:ml-0">
               <div className="flex items-center h-[40px]">
                 <input
                   type="text"
-                  className="max-w-[266px] h-full bg-[#D9D9D9] pl-2"
+                  className="max-w-[266px] md:w-[180px] lg:w-[266px] h-full bg-[#D9D9D9] pl-2"
                 />
                 <div className="bg-[#FB2E86] text-white h-full py-[10px] px-3 text-3xl flex items-center justify-center">
                   <CiSearch />
