@@ -6,7 +6,7 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 const BlogCard = ({ blogImg, writter, title }) => {
   return (
     <>
-      <div className="group max-w-[370px] sm:w-[200px] lg:w-[370px] shadow pb-9 rounded-md cursor-pointer">
+      <div className="group max-w-[370px] sm:w-[200px] md:w-[226px] lg:w-[370px] shadow pb-9 rounded-md cursor-pointer">
         <div className="w-full h-[255px] sm:h-[139px] lg:h-[255px] rounded-lg overflow-hidden mb-7">
           <img src={blogImg ? blogImg : img} alt={blogImg} />
         </div>
