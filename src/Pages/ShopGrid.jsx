@@ -1,7 +1,12 @@
 import React from "react";
+import Banner from "../ShopGridComponent/Banner/Banner";
 
 const ShopGrid = () => {
-  return <div>ShopGrid</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 };
 
 export default ShopGrid;

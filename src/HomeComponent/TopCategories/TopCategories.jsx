@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 import TopCategoriesCard from "../../CommonComponent/TopCategoriesCard/TopCategoriesCard";
 import TopCategoriesData from "../../../TopCategoriesData/TopCategoriesData";
 import Slider from "react-slick";
+
 const TopCategories = () => {
   var settings = {
     dots: true,

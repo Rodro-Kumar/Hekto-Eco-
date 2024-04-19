@@ -10,6 +10,7 @@ import { CiSearch } from "react-icons/ci";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setmenuOpen] = useState(false);
@@ -97,25 +98,31 @@ const Header = () => {
               </div>
               <div className="hidden md:block">
                 <ul className="flex items-center gap-x-8 md:gap-x-4 lg:gap-x-8">
-                  <li className="group flex items-center gap-x-1 cursor-pointer">
-                    <a
-                      href="#"
-                      data-link-alt="Home"
-                      className="group font-Lato font-normal text-base leading-none focus:text-[#FB2E86] group-hover:text-[#FB2E86]"
-                    >
-                      <span>Home</span>
-                    </a>
-                    <IoIosArrowDown className="group-hover:text-[#FB2E86]" />
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      data-link-alt="Pages"
-                      className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
-                    >
-                      <span>Pages</span>
-                    </a>
-                  </li>
+                  <div className="group relative">
+                    <li className="group flex items-center gap-x-1 cursor-pointer">
+                      <a
+                        href="#"
+                        data-link-alt="Home"
+                        className="group font-Lato font-normal text-base leading-none focus:text-[#FB2E86] group-hover:text-[#FB2E86]"
+                      >
+                        <span>Home</span>
+                      </a>
+                      <IoIosArrowDown className="group-hover:text-[#FB2E86]" />
+                    </li>
+                  </div>
+
+                  <div>
+                    <li>
+                      <a
+                        href="#"
+                        data-link-alt="Pages"
+                        className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
+                      >
+                        <span>Pages</span>
+                      </a>
+                    </li>
+                  </div>
+
                   <li>
                     <a
                       href="#"
@@ -176,12 +183,12 @@ const Header = () => {
                     <RxCross2 />
                   </div>
 
-                  <ul className="flex items-center flex-col gap-y-4">
+                  <ul className="flex items-center flex-col gap-y-6">
                     <li className="flex items-center gap-x-1">
                       <a
                         href="#"
                         data-link-alt="Home"
-                        className="text-[#FB2E86] font-Lato font-normal text-base leading-none"
+                        className="text-[#FB2E86] font-Lato font-normal text-base leading-none block"
                       >
                         <span>Home</span>
                       </a>
@@ -191,7 +198,7 @@ const Header = () => {
                       <a
                         href="#"
                         data-link-alt="Pages"
-                        className="text-[#fff] font-Lato font-normal text-base leading-none"
+                        className="text-[#fff] font-Lato font-normal text-base leading-none block"
                       >
                         <span>Pages</span>
                       </a>
@@ -200,7 +207,7 @@ const Header = () => {
                       <a
                         href="#"
                         data-link-alt="Products"
-                        className="text-[#fff] font-Lato font-normal text-base leading-none"
+                        className="text-[#fff] font-Lato font-normal text-base leading-none block"
                       >
                         <span>Products</span>
                       </a>
@@ -209,7 +216,7 @@ const Header = () => {
                       <a
                         href="#"
                         data-link-alt="Blog"
-                        className="text-[#fff] font-Lato font-normal text-base leading-none"
+                        className="text-[#fff] font-Lato font-normal text-base leading-none block"
                       >
                         <span>Blog</span>
                       </a>
@@ -218,7 +225,7 @@ const Header = () => {
                       <a
                         href="#"
                         data-link-alt="Shop"
-                        className="text-[#fff] font-Lato font-normal text-base leading-none"
+                        className="text-[#fff] font-Lato font-normal text-base leading-none block"
                       >
                         <span>Shop</span>
                       </a>
@@ -227,7 +234,7 @@ const Header = () => {
                       <a
                         href="#"
                         data-link-alt="Contact"
-                        className="text-[#fff] font-Lato font-normal text-base leading-none"
+                        className="text-[#fff] font-Lato font-normal text-base leading-none block"
                       >
                         <span>Contact</span>
                       </a>

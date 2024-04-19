@@ -7,7 +7,7 @@ import { IoLogoTwitter } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#EEEFFB] py-24 px-4 xl:px-0">
+      <div className="bg-[#EEEFFB] py-24 px-4 xl:px-0 footer">
         <div className="container">
           <div className="flex justify-between items-center md:items-start lg:items-center lg:gap-x-24 flex-col lg:flex-row">
             <div>
@@ -16,11 +16,13 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Enter Email Address"
-                  className="bg-white rounded pl-5 pr-36 py-4 max-[340px]:pr-28"
+                  className="bg-white rounded pl-5 pr-36 py-4 max-[340px]:pr-24 max-[324px]:pr-20 "
                 />
-                <button className="text-base font-medium text-white py-2 max-[340px]:px-6 px-10 bg-[#FB2E86] rounded absolute top-1/2 -translate-y-1/2 right-2">
-                  Sign Up
-                </button>
+                <div className="absolute top-1/2 right-2 -translate-y-1/2">
+                  <button className="text-base font-medium text-white py-2 max-[340px]:px-4 max-[324px]:px-3 max-[324px]:text-sm px-10 bg-[#FB2E86] rounded">
+                    Sign Up
+                  </button>
+                </div>
               </div>
               <p className="text-[#8A8FB9] font-Lato text-[13px] sm:text-sm pb-2">
                 Contact Info
