@@ -1,12 +1,10 @@
 import React from "react";
 import companyImg from "../../assets/company.png";
-import newsletterImg from "../../assets/newsletter.png";
 
 const Newsletter = () => {
   return (
     <>
-      <div className="bg-[url('src/assets/newsletter.png')] w-full h-full sm:bg-cover pt-44 pb-24 mb-24 bg-center">
-        <img src={newsletterImg} alt="" />
+      <div className="bg-[url('src/assets/newsletter.webp')] w-full h-full sm:bg-cover pt-44 pb-24 mb-24 bg-center">
         <div className="container">
           <div className="flex flex-col items-center justify-center px-4 lg:px-0">
             <h2 className="text-3xl sm:text-4xl font-JosfinSans font-bold text-[#151875] pb-7 max-w-[574px] text-center leading-[50px]">
