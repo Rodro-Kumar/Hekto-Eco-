@@ -7,7 +7,7 @@ import offer4 from "../../assets/offer4.png";
 const Offer = () => {
   return (
     <>
-      <div className="pb-[135px] pt-5 px-4 lg:px-0">
+      <div className="pb-[135px] pt-5 px-4 xl:px-0">
         <div className="container">
           <div>
             <div>
@@ -15,7 +15,7 @@ const Offer = () => {
                 What Shopex Offer!
               </h2>
             </div>
-            <div className="flex items-center justify-between flex-col gap-y-10 sm:gap-y-0 sm:flex-row">
+            <div className="flex items-center justify-between lg:gap-x-4 md:justify-center lg:justify-between flex-col flex-wrap lg:flex-nowrap gap-y-10 lg:gap-y-0 sm:flex-row md:gap-x-10 xl:gap-x-0">
               <div className="pt-[74px] px-[26px] bg-white shadow-md h-[320px]">
                 <div className="flex items-center flex-col">
                   <img src={offer1} alt={offer1} />

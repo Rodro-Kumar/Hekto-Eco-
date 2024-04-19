@@ -6,7 +6,7 @@ const LatestProduct = () => {
   const [productData, setproductData] = useState(latestProductData);
   return (
     <>
-      <div className="pb-14 px-4 lg:px-0">
+      <div className="pb-14 px-4 xl:px-0">
         <div className="container">
           <div>
             <h2 className="text-[#151875] text-4xl sm:text-5xl text-center pb-5 font-bold font-JosfinSans">
@@ -27,7 +27,7 @@ const LatestProduct = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center  flex-wrap gap-y-28 justify-center sm:justify-between">
+          <div className="flex items-center flex-wrap w-full gap-y-28 justify-center md:justify-between">
             {productData.map((item) => (
               <LatestProductCard
                 key={item.id}

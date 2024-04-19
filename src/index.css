@@ -35,6 +35,25 @@
 }
 
 @layer components {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    background: #e93aa6;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff00f2;
+  }
   .header ul li a {
     position: relative;
     overflow: hidden;

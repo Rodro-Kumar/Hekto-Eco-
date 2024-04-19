@@ -11,7 +11,7 @@ const TrendingProduct = () => {
   const [discountData, setdiscountData] = useState(DiscountProdcutData);
   return (
     <>
-      <div className="pb-32 px-4 lg:px-0">
+      <div className="pb-32 px-4 xl:px-0">
         <div className="container">
           <div>
             <div>
@@ -19,7 +19,7 @@ const TrendingProduct = () => {
                 Trending Products
               </h3>
             </div>
-            <div className="flex items-center justify-between flex-col sm:flex-row gap-y-10 sm:gap-y-0">
+            <div className="flex items-center justify-between md:justify-center lg:gap-x-4 xl:justify-between flex-col flex-wrap lg:flex-nowrap sm:flex-row gap-y-10 lg:gap-y-0 gap-x-10 ">
               {TrendingProductData.map((item) => {
                 return (
                   <TrendingProductCard
@@ -33,8 +33,11 @@ const TrendingProduct = () => {
                 );
               })}
             </div>
-            <div className="pt-10 flex gap-x-6 flex-col sm:flex-row gap-y-4 sm:gap-y-0">
-              <div className="flex items-center gap-x-7 flex-col md:flex-row gap-y-4 sm:gap-y-0">
+            <div className="pt-10 flex gap-x-6 flex-col xl:flex-row gap-y-4 lg:gap-y-6 xl:gap-y-0">
+              <div
+                className="flex items-center gap-x-7 flex-col md:flex-row gap-y-4 md:gap-y-0 lg:justify-center xl:justify-start
+              "
+              >
                 {discountData.map((item) => (
                   <DiscountProductCard1
                     className={"relative"}
@@ -46,7 +49,7 @@ const TrendingProduct = () => {
                   />
                 ))}
               </div>
-              <div className="flex flex-col justify-between gap-y-4 sm:gap-y-0">
+              <div className="flex flex-col md:flex-row xl:flex-col justify-between items-center gap-y-4 md:gap-y-0">
                 {discountData2.map((item) => (
                   <DiscountProductCard2
                     key={item.id}

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../CommonComponent/Header/Header";
 import Hero from "../HomeComponent/Hero/Hero";
 import FeatureProduct from "../HomeComponent/FeatureProduct/FeatureProduct";
 import LatestProduct from "../HomeComponent/LatestProduct/LatestProduct";
@@ -14,7 +13,6 @@ import Blog from "../HomeComponent/Blog/Blog";
 const Home = () => {
   return (
     <>
-      <Header />
       <Hero />
       <FeatureProduct />
       <LatestProduct />

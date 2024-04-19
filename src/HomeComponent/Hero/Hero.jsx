@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div id="hero" className="bg-[#f2f0ff] overflow-hidden">
         <div className="container">
-          <div className="py-10 flex items-center relative flex-col md:flex-row px-4 lg:px-0">
+          <div className="py-10 flex items-center relative flex-col md:flex-row px-4 xl:px-0">
             <div className="absolute left-[-200px] top-0">
               <img src={lamp} alt={lamp} />
             </div>
@@ -15,7 +15,7 @@ const Hero = () => {
               <p className="text-base font-Lato text-[#fb2e86] font-bold pb-6 md:pb-6">
                 Best Furniture For Your Castle....
               </p>
-              <div className="block md:hidden">
+              <div className="block md:hidden w-[270px] sm:w-[363px]">
                 <picture>
                   <img src={sofa} alt={sofa} />
                 </picture>

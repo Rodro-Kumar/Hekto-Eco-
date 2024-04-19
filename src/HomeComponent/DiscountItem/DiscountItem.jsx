@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const DiscountItem = () => {
   return (
     <>
-      <div className="pb-20 px-4 lg:px-0">
+      <div className="pb-20 px-4 xl:px-0">
         <div className="container">
           <div>
             <h2 className="text-[#151875] font-JosfinSans font-bold text-4xl sm:text-5xl pb-8 text-center">

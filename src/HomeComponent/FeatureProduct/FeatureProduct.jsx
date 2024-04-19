@@ -62,7 +62,7 @@ const FeatureProduct = () => {
 
   return (
     <>
-      <div className="pt-32 pb-[70px] px-4 lg:px-0">
+      <div className="pt-32 pb-[70px] px-4 xl:px-0">
         <div className="container">
           <div className="py-10">
             <h1 className="text-[#1A0B5B] font-JosfinSans text-4xl sm:text-5xl font-bold text-center pb-12">

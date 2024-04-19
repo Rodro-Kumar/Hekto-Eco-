@@ -12,7 +12,7 @@ const TrendingProductCard = ({
     <>
       <div className="p-3 bg-white shadow flex flex-col max-w-[270px] items-center justify-center cursor-pointer">
         <div>
-          <div className="bg-[#F5F6F8] py-7 px-9 h-[244px]">
+          <div className="bg-[#F5F6F8] py-7 px-9 h-[244px] lg:h-[220px] xl:h-[244px]">
             <img src={productImg ? productImg : trending} alt={productImg} />
           </div>
           <div className="pt-4 flex items-center flex-col justify-between">
