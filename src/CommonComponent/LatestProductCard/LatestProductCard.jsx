@@ -15,7 +15,7 @@ const LatestProductCard = ({
 }) => {
   return (
     <>
-      <div className="group relative w-[280px] sm:w-[360px] h-[306px] cursor-pointer">
+      <div className="group relative w-[280px] sm:w-[300px] md:w-[328px] lg:w-[305px] xl:w-[360px] h-[306px] cursor-pointer">
         {status ? (
           <div className="absolute top-6 left-4 z-10">
             <picture>
