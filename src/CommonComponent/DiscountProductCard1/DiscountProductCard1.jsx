@@ -5,10 +5,10 @@ const DiscountProductCard1 = ({ className, title, tag, img, tagTitle }) => {
   return (
     <>
       <div
-        className={`pt-9 pl-6 bg-[#FFF6FB] w-[326px] sm:w-[420px] h-[270px] text-center sm:text-start ${className}`}
+        className={`pt-9 pl-6 bg-[#FFF6FB] w-[326px] max-[334px]:w-[300px] sm:w-[420px] h-[270px] text-center sm:text-start ${className}`}
       >
         <div>
-          <h4 className="text-[#151875] font-JosfinSans font-semibold text-[26px] pb-3">
+          <h4 className="text-[#151875] font-JosfinSans font-semibold text-[26px] pb-3 max-[315px]:text-[20px]">
             {title ? title : "23% off in all products"}
           </h4>
           {tag ? (
