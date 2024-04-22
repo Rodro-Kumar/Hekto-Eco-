@@ -16,24 +16,24 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Enter Email Address"
-                  className="bg-white rounded pl-5 pr-36 py-4 max-[340px]:pr-24 max-[324px]:pr-20 "
+                  className="bg-white rounded pl-5 pr-36 py-4 max-[350px]:pr-[90px] max-[340px]:pr-24 max-[324px]:pr-20 "
                 />
                 <div className="absolute top-1/2 right-2 -translate-y-1/2">
-                  <button className="text-base font-medium text-white py-2 max-[340px]:px-4 max-[324px]:px-3 max-[324px]:text-sm px-10 bg-[#FB2E86] rounded">
+                  <button className="text-base font-medium text-white py-2 max-[340px]:px-4 max-[324px]:px-3 max-[324px]:text-sm px-10 bg-[#FB2E86] rounded max-[350px]:px-2">
                     Sign Up
                   </button>
                 </div>
               </div>
-              <p className="text-[#8A8FB9] font-Lato text-[13px] sm:text-sm pb-2">
+              <p className="text-[#8A8FB9] font-Lato text-base sm:text-sm pb-2">
                 Contact Info
               </p>
-              <h4 className="text-[#8A8FB9] font-Lato text-[13px] sm:text-sm">
+              <h4 className="text-[#8A8FB9] font-Lato text-base sm:text-sm">
                 17 Princess Road, London, Greater London NW1 8JR, UK
               </h4>
             </div>
             <div className="mt-8 flex justify-between w-full flex-wrap sm:flex-nowrap md:gap-x-28 gap-y-8 md:gap-y-0">
               <ul>
-                <li className="text-black font-Lato text-base sm:text-xl font-bold pb-5">
+                <li className="text-black font-Lato text-base sm:text-xl font-bold pb-0 sm:pb-5">
                   Catagories
                 </li>
                 <li className="text-[#8A8FB9] font-Lato text-sm sm:text-base font-medium pt-5">
@@ -53,7 +53,7 @@ const Footer = () => {
                 </li>
               </ul>
               <ul>
-                <li className="text-black font-Lato text-base sm:text-xl font-bold pb-5">
+                <li className="text-black font-Lato text-base sm:text-xl font-bold pb-0 sm:pb-5">
                   Customer Care
                 </li>
                 <li className="text-[#8A8FB9] font-Lato text-sm sm:text-base font-medium pt-5">
@@ -73,7 +73,7 @@ const Footer = () => {
                 </li>
               </ul>
               <ul>
-                <li className="text-black font-Lato text-base sm:text-xl font-bold pb-5">
+                <li className="text-black font-Lato text-base sm:text-xl font-bold pb-0 sm:pb-5">
                   Pages
                 </li>
                 <li className="text-[#8A8FB9] font-Lato text-sm sm:text-base font-medium pt-5">
