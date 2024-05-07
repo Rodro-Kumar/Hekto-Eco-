@@ -100,26 +100,26 @@ const Header = () => {
                 <ul className="flex items-center gap-x-8 md:gap-x-4 lg:gap-x-8">
                   <div className="group relative">
                     <li className="group flex items-center gap-x-1 cursor-pointer">
-                      <a
-                        href="#"
+                      <Link
+                        to={"/"}
                         data-link-alt="Home"
                         className="group font-Lato font-normal text-base leading-none focus:text-[#FB2E86] group-hover:text-[#FB2E86]"
                       >
                         <span>Home</span>
-                      </a>
+                      </Link>
                       <IoIosArrowDown className="group-hover:text-[#FB2E86]" />
                     </li>
                   </div>
 
                   <div>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to={"/shopgrid"}
                         data-link-alt="Pages"
                         className="text-[#000] font-Lato font-normal text-base leading-none focus:text-[#FB2E86]"
                       >
                         <span>Pages</span>
-                      </a>
+                      </Link>
                     </li>
                   </div>
 
@@ -195,13 +195,13 @@ const Header = () => {
                       <IoIosArrowDown className="text-[#FB2E86]" />
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
                         data-link-alt="Pages"
                         className="text-[#fff] font-Lato font-normal text-base leading-none block"
                       >
                         <span>Pages</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
