@@ -196,7 +196,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        to={"/shopgrid"}
                         data-link-alt="Pages"
                         className="text-[#fff] font-Lato font-normal text-base leading-none block"
                       >
@@ -244,7 +244,7 @@ const Header = () => {
                 <div className="flex items-center h-[40px] mt-4">
                   <input
                     type="text"
-                    className="max-w-[266px] h-full bg-[#D9D9D9] pl-2"
+                    className="max-w-[266px] border-2 border-[#E7E6EF] focus:bg-[#D9D9D9] focus:transition-all h-full pl-2"
                   />
                   <div className="bg-[#FB2E86] text-white h-full py-[10px] px-3 text-3xl flex items-center justify-center">
                     <CiSearch />
@@ -259,7 +259,7 @@ const Header = () => {
               <div className="flex items-center h-[40px]">
                 <input
                   type="text"
-                  className="max-w-[266px] md:w-[180px] lg:w-[266px] h-full bg-[#D9D9D9] pl-2"
+                  className="max-w-[266px] md:w-[180px] lg:w-[266px] h-full border-2 border-[#E7E6EF] focus:bg-[#D9D9D9] focus:transition-all pl-2"
                 />
                 <div className="bg-[#FB2E86] text-white h-full py-[10px] px-3 text-3xl flex items-center justify-center">
                   <CiSearch />
