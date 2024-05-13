@@ -4,20 +4,16 @@ import { FaList } from "react-icons/fa";
 import ShopProductCard from "../../CommonComponent/ShopProductCard/ShopProductCard";
 import axios from "axios";
 import companyImg from "../../assets/company.png";
-import { useDispatch } from "react-redux";
-import { setProducts } from "../../../Redux/Slice/Slice";
 
 const Product = () => {
-  const dispatch = useDispatch();
-
-  const [allproduct, setallproduct] = useState();
+  const [allproduct, setallproduct] = useState([]);
   const [perPage, setperPage] = useState(12);
+  const [listLayout, setlistLayout] = useState(false);
 
   useEffect(() => {
     const Datafetcher = async () => {
       const allData = await axios.get("https://dummyjson.com/products");
       setallproduct(allData.data.products);
-      dispatch(setProducts(allData.data.products));
     };
 
     Datafetcher();
@@ -31,6 +27,10 @@ const Product = () => {
     } else {
       setperPage(event.target.value);
     }
+  };
+
+  const HandleListLayout = () => {
+    setlistLayout(true);
   };
 
   return (
@@ -72,11 +72,21 @@ const Product = () => {
                 <p className="text-sm md:text-base font-Lato font-normal text-[#3F509E]">
                   View:
                 </p>
-                <div className="flex items-center gap-x-1 text-[#151875]">
-                  <div className="cursor-pointer text-lg">
+                <div className={`flex items-center gap-x-1 text-[#151875]`}>
+                  <div
+                    className={`cursor-pointer text-lg ${
+                      listLayout ? "text-[#0008ff]" : "text-[#151875]"
+                    } `}
+                    onClick={() => setlistLayout(false)}
+                  >
                     <HiSquares2X2 />
                   </div>
-                  <div className="cursor-pointer text-lg">
+                  <div
+                    className={`cursor-pointer text-lg ${
+                      listLayout ? "text-[#1a1b46]" : "text-[#0008ff]"
+                    }`}
+                    onClick={HandleListLayout}
+                  >
                     <FaList />
                   </div>
                 </div>
@@ -89,6 +99,14 @@ const Product = () => {
             <div className="flex flex-wrap justify-between gap-y-12">
               {allproduct?.slice(0, perPage).map((product) => (
                 <ShopProductCard
+                  rating={product.rating}
+                  data={allproduct}
+                  listlayout={listLayout}
+                  className={`${
+                    listLayout
+                      ? "md:w-full flex md:h-full gap-x-4 border-2 border-[#7e33e056] shadow-lg"
+                      : "md:w-[290px] border-none gap-x-0 flex-col shadow-none"
+                  } `}
                   key={product.id}
                   productImg={product.thumbnail}
                   productTitle={product.title}
@@ -98,7 +116,8 @@ const Product = () => {
                       : null
                   }
                   mainPrice={product.price - product.discountPercentage}
-                  discount={product.discountPercentage}
+                  discount={"$" + product.discountPercentage}
+                  productDes={product.description}
                 />
               ))}
             </div>
