@@ -5,8 +5,8 @@ const Newsletter = () => {
   return (
     <>
       <div
+        id="newsLater"
         className="bg-cover sm:bg-cover pt-44 pb-24 mb-24 bg-center"
-        style={{ backgroundImage: "url('src/assets/newsletter.webp')" }}
       >
         <div className="container">
           <div className="flex flex-col items-center justify-center px-4 lg:px-0">

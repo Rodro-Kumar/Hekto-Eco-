@@ -261,4 +261,8 @@
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
   }
+
+  #newsLater {
+    background-image: url("../src/assets/newsletter.png");
+  }
 }
